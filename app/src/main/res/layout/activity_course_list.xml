@@ -8,7 +8,7 @@
 
     <ScrollView
         android:layout_width="409dp"
-        android:layout_height="20dp"
+        android:layout_height="100dp"
         tools:layout_editor_absoluteX="1dp"
         tools:layout_editor_absoluteY="1dp">
 
@@ -24,18 +24,15 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Hi one">
+                    android:text="Term Name">
                 </TextView>
-                <TextView
+                <EditText
+                    android:id="@+id/editTermName"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Hi two">
-                </TextView>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Hi three">
-                </TextView>
+                    android:hint="Term Name">
+                </EditText>
+
             </LinearLayout>
 
             <LinearLayout
@@ -45,18 +42,15 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Hi four">
+                    android:text="Term Start Date">
                 </TextView>
-                <TextView
+                <EditText
+                    android:id="@+id/editTermStart"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Hi five">
-                </TextView>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Hi six">
-                </TextView>
+                    android:hint="MM/DD/YYYY">
+                </EditText>
+
             </LinearLayout>
 
             <LinearLayout
@@ -66,20 +60,26 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Hi Seven">
+                    android:text="Term End Date">
                 </TextView>
-                <TextView
+                <EditText
+                    android:id="@+id/editTermEnd"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Hi eight">
-                </TextView>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Hi nine">
-                </TextView>
+                    android:hint="MM/DD/YYYY">
+                </EditText>
             </LinearLayout>
-            
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Save"
+                android:clickable="true"
+                android:onClick="saveButton">
+
+            </Button>
+
+
         </LinearLayout>
 
     </ScrollView>
