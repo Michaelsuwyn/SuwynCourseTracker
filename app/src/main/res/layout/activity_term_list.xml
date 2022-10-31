@@ -18,4 +18,15 @@
         app:layout_constraintRight_toRightOf="parent"
         tools:layout_editor_absoluteX="332dp"
         tools:layout_editor_absoluteY="655dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/termRecyclerView"
+        android:layout_width="409dp"
+        android:layout_height="653dp"
+        android:layout_margin="5dp"
+        android:background="@color/teal_200"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
